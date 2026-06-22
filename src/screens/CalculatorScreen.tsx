@@ -8,7 +8,7 @@ import { colors } from '../theme/colors';
 import { CalcButton } from '../components/CalcButton';
 import { Display } from '../components/Display';
 import { Toast } from '../components/Toast';
-import { evaluate, formatNumber, AngleMode } from '../engine/calcEngine';
+import { evaluate, formatNumber, preview as calcPreview, AngleMode } from '../engine/calcEngine';
 import { HistoryScreen } from './HistoryScreen';
 import { HelpScreen } from './HelpScreen';
 import { SettingsScreen } from './SettingsScreen';
@@ -105,7 +105,7 @@ export const CalculatorScreen: React.FC = () => {
     setError(false);
     setLastAnswer(res.value);
     setNewEntry(true);
-    // Add to history
+    // Add to history with the display expression
     const entry: HistoryEntry = {
       expr, result: fmt, time: new Date().toLocaleString(), id: Date.now(),
     };

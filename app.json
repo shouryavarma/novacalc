@@ -14,7 +14,9 @@
       "supportsTablet": true,
       "bundleIdentifier": "com.novacalc.app",
       "infoPlist": {
-        "UIRequiredDeviceCapabilities": ["arm64"],
+        "UIRequiredDeviceCapabilities": [
+          "arm64"
+        ],
         "UISupportedInterfaceOrientations": [
           "UIInterfaceOrientationLandscapeLeft",
           "UIInterfaceOrientationLandscapeRight"
@@ -27,6 +29,10 @@
         "backgroundColor": "#080c18"
       }
     },
-    "plugins": ["expo-localization"]
+    "plugins": [
+      "expo-localization",
+      "expo-asset",
+      "expo-font"
+    ]
   }
 }
