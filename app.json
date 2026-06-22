@@ -1,0 +1,32 @@
+{
+  "expo": {
+    "name": "NovaCalc",
+    "slug": "novacalc",
+    "version": "1.0.0",
+    "orientation": "landscape",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "backgroundColor": "#080c18",
+      "resizeMode": "contain"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.novacalc.app",
+      "infoPlist": {
+        "UIRequiredDeviceCapabilities": ["arm64"],
+        "UISupportedInterfaceOrientations": [
+          "UIInterfaceOrientationLandscapeLeft",
+          "UIInterfaceOrientationLandscapeRight"
+        ]
+      }
+    },
+    "android": {
+      "package": "com.novacalc.app",
+      "adaptiveIcon": {
+        "backgroundColor": "#080c18"
+      }
+    },
+    "plugins": ["expo-localization"]
+  }
+}
